@@ -6,12 +6,14 @@ const mongoose = require('mongoose'), //Importamos mongoose
 //Crear instancia del objeto Schema
 
 let UsuarioSchema = new Schema({
-    nombre: String,
+    nombre: String, 
     apellido: String,
     correo: String,
     contrasena: String,
-    rol: String,
+    repeatContrasena: String,
+    rol: Number,
     imagen: String 
+    
 });
 
 //Exportar Schema

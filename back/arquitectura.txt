@@ -1,0 +1,40 @@
+Estructura de base de datos Usuario:
+
+    nombre: String, 
+    apellido: String,
+    correo: String,
+    contrasena: String,
+    repeatContrasena: String,
+    rol: 2,
+    imagen: String 
+
+CHECK LIST
+
+PROMESA 
+1. Campos del registro (nombre, apellido, correo, contraseña, repetir contraseña)
+2. Mostrar contenido usuario general --- esto lo tiene luna
+3. crud admin
+4. crud en lista de reproducción del usuario
+5. Usuario playlist     
+
+
+
+
+POR MEJORAR
+
+Rutas:
+Usuario:
+
+Registro -> /registro
+login -> /login
+bienvenida -> /bienvenida/:id
+interfaz -> /interfaz/:id
+generos -> /interfaz/generos
+perfil -> /interfaz/perfil
+editarPerfil -> /interfaz/editarP
+
+Admin:
+
+registro -> /registro
+login -> /login
+CRUD -> /admin
