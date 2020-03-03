@@ -1,0 +1,12 @@
+.contenedorEditar {
+  top: 0;
+  position: relative;
+  background: black no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedorEditar .tarjeta {
+  margin-left: 5%;
+}
+/*# sourceMappingURL=editar-perfil.component.css.map */

@@ -1,0 +1,44 @@
+<div class="registro">
+    <app-header></app-header>
+    <!-- 
+        Indicar un id de Angular cuyo valor será ngForm(formulario Angular) para que se acople a nuestras
+        necesidades con nuestro framework
+
+        --#formularioRegistro= "ngForm" // FormsModule
+        
+        Declarar un evento nativo de Angular llamado ngSubmit. Los eventos en angular se declaran entre paréntesis.
+        Este evento va a disparar una función que se va a encontrar en el archivo .component.ts
+     -->
+    <header class="masthead">
+        <div class="overlay"></div>
+
+        <div class="container row pt-5  mx-auto ">
+            <div class="col-md-6   card wow flip   p-1" style="background: rgba(0, 0, 0, 0.473); border-radius: 20px;">
+                <div class="contenedorlogo row">
+                    <div class="logo col-sm-12 text-center ">
+                        <img src="/assets/imagenes/LogoWTrans.png" style="width: 50%; height: 100%;" alt="">
+                    </div>
+                </div>
+
+                <form #formularioRegistro="ngForm" (ngSubmit)="registrarUsuario()">
+
+                    <input class="input form-control mr-1" type="text" placeholder="Nombre" #nombre="ngModel"
+                        name="nombre" [(ngModel)]="usuarioRegistro.nombre">
+                    <input class="input form-control" type="text" placeholder="Apellido" #apellido="ngModel"
+                        name="apellido" [(ngModel)]="usuarioRegistro.apellido">
+
+                    <input class="input form-control" type="text" placeholder="Correo electronico" #correo="ngModel"
+                        name="correo" [(ngModel)]="usuarioRegistro.correo">
+
+                    <input class="input form-control" type="text" placeholder="Contraseña" #contrasena="ngModel"
+                        name="contrasena" [(ngModel)]="usuarioRegistro.contrasena">
+
+                    <input class="input form-control" type="text" placeholder="Confirma contraseña"
+                        #repeatContrasena="ngModel" name="repeatContrasena"
+                        [(ngModel)]="usuarioRegistro.repeatContrasena">
+                    <button type="submit" class="btn text-white h1 px-3 mx-auto"
+                        style="background: #FBA12B; width: 50%; border-radius: 10px;">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </header>

@@ -92,7 +92,7 @@ const subirImg = (req, res) => {
         nombreArchivo = partirArchivo[2];
         console.log(nombreArchivo);
 
-        let extensionImg = nombreArchivo.split('\.');
+        let extensionImg = nombreArchivo.split('\.');   
         console.log(extensionImg);
 
         let extensionArchivo = extensionImg[1];

@@ -1,0 +1,98 @@
+header {
+  z-index: -5;
+  top: 0;
+  position: relative;
+  background: url("/assets/img/bienvenida/mainImg1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .overlay2 {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, right top, from(#050517), color-stop(#442445), color-stop(#94395a), color-stop(#da5f4e), to(#fba12b));
+  background: linear-gradient(to right top, #050517, #442445, #94395a, #da5f4e, #fba12b);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+header .overlay2 #particles-js {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+header .headerText {
+  margin-top: 5%;
+  padding: 10% 0 10% 0;
+}
+
+header .btnInicia {
+  justify-items: center;
+  padding: 1.1rem;
+  border-radius: 1rem;
+  margin-top: 7%;
+  border: none;
+  background: #fba12b;
+}
+
+/* .bienvPirnc {
+  background-image: url("/assets/img/bienvenida/mainImg1.jpg");
+  background-size: cover;
+  height: 100%;
+
+  .overlay {
+    position: absolute;
+    background: linear-gradient(to right top, #050517, #442445, #94395a, #da5f4e, #fba12b);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+
+    .particle{
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .botonBienvenida {
+    background-color: #fba12b9f;
+    border: none;
+    border-radius: 1rem;
+  }
+  .card {
+    border: none;
+    padding: 0;
+    width: 100%;
+    font-size: 2rem;
+  }
+} */
+/*    .usuario{
+        display: flex;
+        justify-content: flex-end;
+    }
+    img{
+        width: 30%;
+        height: 20vh;
+    }
+    .avatar{
+        border-radius: 100%;
+    }
+    .main{
+        border: 1px solid black;
+        width: 70%;
+    }
+    .bienvenido{
+    font-size: 50px;
+    text-align: left;
+    }
+    .escucha{
+    font-size: 40px;
+    text-align: center;
+    } */
+/*# sourceMappingURL=bienvenida-user.component.css.map */

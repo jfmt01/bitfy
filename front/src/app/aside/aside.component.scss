@@ -1,0 +1,20 @@
+.asideInterfaz {
+  background-size: cover;
+  height: 100%;
+
+  .navbar {
+    background: #fba12b;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .generos {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

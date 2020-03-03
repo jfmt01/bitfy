@@ -6,7 +6,7 @@ const crearCancion = (req, res) => {
 
     let cancion = new Cancion();
 
-    let propiedades = req.body;
+    let propiedades = req.body.toLowerCase();
 
     cancion.nombre = propiedades.nombre;
     cancion.artista = propiedades.artista;
@@ -27,6 +27,19 @@ const crearCancion = (req, res) => {
             }
         }
     });
+}
+
+const verCanciones = (req,res) => {
+    let cancionId = req.params.id;
+   Cancion.find(cancionId, (err, canciones) => {
+       if (err){ 
+           return req.status(500).send({message: "Error de conexión"});
+       }else{
+           return res.status(200).send(canciones);
+       }
+       
+   });
+
 }
 
 const buscarCancion = (req, res) => {
@@ -51,7 +64,7 @@ const buscarCancion = (req, res) => {
 
 const actualizarCancion = (req, res) => {
     let cancionId = req.params.id,
-        nuevosDatosCancion = req.body;
+        nuevosDatosCancion = req.body.toLowerCase();
 
     Cancion.findByIdAndUpdate(cancionId, nuevosDatosCancion, (err, cancionActualizada) => {
         if (err) {
@@ -63,6 +76,20 @@ const actualizarCancion = (req, res) => {
         }
     })
 }
+
+const eliminarCancion = (req,res) => {
+    let cancionId = req.params.id;
+ 
+    Cancion.findByIdAndRemove(cancionId,(err)=>{
+        if(err){
+            res.status(500).send({message: "Error en el servidor"});
+        } else {
+            res.status(200).send({message: "Se elimino la canción correctamente"});
+        }
+        
+    });
+ }
+
 
 const subirCancion = (req, res) => {
     let cancionId = req.params.id;
@@ -191,6 +218,8 @@ module.exports = {
     crearCancion,
     buscarCancion,
     actualizarCancion,
+    verCanciones,
+    eliminarCancion,
     subirCancion,
     mostrarCancion,
     subirPortada,

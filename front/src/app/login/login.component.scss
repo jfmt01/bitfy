@@ -1,0 +1,54 @@
+#fondo-login{
+    background-image: url("/assets/img/login/InicioSesion.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .contenedor-formulario{
+        width: 60%;
+    }
+    .container{
+        width: 60%;
+    
+    }
+    h3{
+        font-size: 40px;
+    }
+    .formulario{
+        margin-top: 2%;
+        width: 60%;
+        margin: auto;
+        padding: 40px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 3%;
+        
+    }
+    #footer{
+        background-color: black;
+        height: 100px;
+    }
+    .boton{
+         background-color: #050517;
+         border: solid 2px #050517;
+         width: 32%;
+         margin-top: 4% ; 
+    }
+    .boton:hover{
+        background-color: #FBA12B;
+        border: solid 2px #FBA12B;
+        width: 33%;
+    }
+    .boton-registro{
+        background-color: #050517;
+         border: solid 2px #050517;
+         width: 20%;
+         margin-bottom: 2%;
+    }
+    .boton-registro:hover{
+        background-color: #FBA12B;
+        border: solid 2px #FBA12B;
+        width: 21%;
+    }
+    .texto-cuenta{
+        margin-top: 4%;
+    }

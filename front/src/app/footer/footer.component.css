@@ -1,0 +1,73 @@
+footer {
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+  background: #000;
+  border: 0;
+  padding: 0;
+}
+
+#redes {
+  background-color: #222326;
+  border-radius: 40px;
+  padding: 18px 15px;
+  color: #333;
+  margin: 5px;
+}
+
+.icon-instagram {
+  width: 20px;
+}
+
+.icon-instagram:hover {
+  color: #FBA12B;
+}
+
+.icon-facebook {
+  font-size: 20px;
+  color: #fff;
+}
+
+.icon-facebook:hover {
+  color: #FBA12B;
+}
+
+.icon-twitter {
+  width: 20px;
+  color: #fff;
+}
+
+.icon-twitter:hover {
+  color: #FBA12B;
+}
+
+ul > li > a:hover {
+  color: #FBA12B;
+}
+
+.text {
+  color: #fff;
+  text-decoration: none;
+}
+
+h5 {
+  color: #919496;
+}
+
+a {
+  color: #919496;
+}
+
+a:hover {
+  color: #FBA12B;
+  text-decoration: none;
+}
+
+.laimg {
+  margin-left: 10px;
+}
+
+#c2 {
+  margin-top: 110px;
+}
+/*# sourceMappingURL=footer.component.css.map */

@@ -1,0 +1,84 @@
+<div class="contenedorEditar">
+
+    <app-header></app-header>
+    <app-aside></app-aside>
+    <section class="pt-5 editar">
+        <div class="container pt-5">
+            <div class="card bg-transparent tarjeta">
+                <div class="row">
+                    <div class="col-3 bg-transparent" >
+                        <img class="img-fluid pt-2" src="Imagen 3.png" alt="">
+                        <p class="h4 text-center pt-3 text-white">Fernanda Alvareta </p>
+                        <div class=" pt-5 nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active text-white" id="v-pills-home-tab" data-toggle="pill"
+                                href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Editar
+                                perfil </a>
+                            <a class="nav-link text-white" id="v-pills-profile-tab" data-toggle="pill"
+                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                aria-selected="false">Cambiar contraseña </a>
+                            <a class="btn btn-primary mt-5 mb-5" href="">Cerrar sesión </a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="card  mt-3" style="background-color: black;">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+                                    <div class="container pt-5">
+                                        <div class="row">
+                                            <p class="h3 text-white "> Editar perfil </p>
+                                            <div class="container">
+                                                <form class="pt-5" action="">
+                                                    <input class="form-control mt-4 form-control-lg" type="text"
+                                                        placeholder="Correo electronico">
+                                                    <input class="form-control form-control-lg mt-4" type="text"
+                                                        placeholder="Nombre">
+                                                    <input class="form-control form-control-lg mt-4 " type="text"
+                                                        placeholder="Apellido">
+                                                    <div class="form-row pt-4">
+                                                        <div class="col-4">
+                                                            <input type="text" class="form-control" placeholder="año ">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" placeholder="State">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" placeholder="Zip">
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class=" text-center btn btn-primary mt-3 mb-5 ">Guardar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab">
+                                    <p class="pt-5 h4">Cambiar contraseña</p>
+                                    <div class="container">
+                                        <form class="pt-5" action="">
+                                            <input class="form-control mt-4 form-control-lg" type="text"
+                                                placeholder="Contraseña antigua">
+                                            <input class="form-control form-control-lg mt-4" type="text"
+                                                placeholder="Contraseña nueva">
+                                            <input class="form-control form-control-lg mt-4 " type="text"
+                                                placeholder="Confirmar contraseña nueva">
+                                            <button class=" text-center btn btn-primary mt-3 mb-5 ">Cambiar
+                                                contraseña</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab">...</div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
